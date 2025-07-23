@@ -475,7 +475,7 @@ class datadog_agent (
           remote_policies                   => $remote_policies,
         }
       }
-      'RedHat','CentOS','Fedora','Amazon','Scientific','OracleLinux','AlmaLinux','Rocky' : {
+      'RedHat','CentOS','Fedora','Amazon','Scientific','OracleLinux','AlmaLinux','Rocky','VirtuozzoLinux' : {
         class { 'datadog_agent::redhat_installer':
           api_key                           => $api_key,
           datadog_site                      => $datadog_site,
