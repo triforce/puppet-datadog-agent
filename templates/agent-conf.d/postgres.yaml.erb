@@ -16,6 +16,7 @@ instances:
 #
 <%- (Array(@_instances)).each do |instance| -%>
   - host: <%= instance['host'] %>
+    dbm: true
     port: <%= instance['port']  %>
     username: <%= instance['username']  %>
     password: <%= instance['password']  %>
